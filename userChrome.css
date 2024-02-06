@@ -1,0 +1,37 @@
+/* ############# Required files ############## */
+
+@import url("components/hide_alltabs_button.css");
+@import url("components/urlbar_centered_text.css");
+@import url("components/round_caption_buttons.css");
+@import url("components/toolbars.css");
+/* @import url("components/cascade_responsive.css"); */
+/* ############# Personal Settings ############## */
+#navigator-toolbox {
+  --uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.1s */
+}
+:root {
+  --general-border-radius: 5px !important;
+  --auto-general-color: var(--lwt-accent-color) !important;
+}
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+/* ROOT - VARS */
+*|*:root {
+  --tab-min-height: 25px !important; /* adjust */
+  --tab-min-width: 60px !important; /* adjust */
+}
+
+/* Hide Tab spacer */
+.titlebar-spacer {
+  display: none;
+}
+
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+#sidebar-box {
+  margin-top: 3px;
+  margin-right: 5px;
+}
